@@ -1,0 +1,24 @@
+SIMPLE USAGE C++ REST SDK
+
+Here, I made some examples of usage of C++ REST SDK from scratch. There are four simple examples:
+1. cpprestsdk-1
+Contain very basic usage of C++ REST SDK.
+
+2. cpprestsdk-2
+Here, I give example usage of how to use handler of HTTP Listener Support method.
+
+3. cpprestsdk-3
+This example contain expand class based on cpprestsdk-1 and cpprestsdk-2.
+
+4. cpprestsdk-4
+In this example, I made some class with header files and organize it become simple example server app.
+
+To build these examples are easy. For cpprestsdk-1 until cpprestsdk-3, just do the following command from terminal
+
+g++ -std=c++11 main.cpp -o main -lboost_system -lcrypto -lssl -lcpprest
+./main
+
+For example cpprestsdk-4, do the following command
+
+g++ -std=c++11 main.cpp src/*.cpp -o main -lboost_system -lcrypto -lssl -lcpprest
+./main
